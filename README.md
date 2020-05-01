@@ -23,8 +23,12 @@ TODOs
   - animations
   - javascript
   
- 4. Avout page
+ 4. About page
   - image
   - split column layout
   - content
   
+First step
+- add the index.html file
+- add the about.html file
+Note: For both of these files, using HTML Snippets
