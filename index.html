@@ -51,11 +51,11 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--eatgood-->
+                <!--eatgood-->
 
-            <div class="portfolio-items-wrapper">
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -72,10 +72,10 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--nature-->
-            <div class="portfolio-items-wrapper">
+                <!--nature-->
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -92,10 +92,10 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--work-->
-            <div class="portfolio-items-wrapper">
+                <!--work-->
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -112,10 +112,10 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--paris-->
-            <div class="portfolio-items-wrapper">
+                <!--paris-->
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -132,10 +132,10 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--mood-->
-            <div class="portfolio-items-wrapper">
+                <!--mood-->
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -152,10 +152,10 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--vibes-->
-            <div class="portfolio-items-wrapper">
+                <!--vibes-->
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -172,10 +172,10 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--strength-->
-            <div class="portfolio-items-wrapper">
+                <!--strength-->
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -192,11 +192,11 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--travel-->
+                <!--travel-->
 
-            <div class="portfolio-items-wrapper">
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -213,11 +213,11 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--books-->
+                <!--books-->
 
-            <div class="portfolio-items-wrapper">
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -234,11 +234,11 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--root-->
+                <!--root-->
 
-            <div class="portfolio-items-wrapper">
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -255,11 +255,11 @@
                 </div>
 
 
-            </div>
+                <!--/div-->
 
-            <!--berlin-->
+                <!--berlin-->
 
-            <div class="portfolio-items-wrapper">
+                <!--div class="portfolio-items-wrapper"-->
 
                 <div class="portfolio-item-wrapper">
 
@@ -282,5 +282,21 @@
 
     </div>
 </body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+    });
+</script>
 
 </html>
